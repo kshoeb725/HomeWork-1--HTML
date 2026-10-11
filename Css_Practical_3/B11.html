@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style>
+        nav{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .box1{
+            height: 70px;
+            width: 70px;
+            padding: 10px;
+            margin: 20px;
+        }
+        .container1{
+           display: flex;
+           flex-direction: column; 
+        }
+        @media(min-width:600px){
+            nav{
+            display: flex;
+            flex-direction: column; 
+        }
+        .container1{
+           display: flex;
+           flex-direction: row; 
+        }
+        }
+    </style>
+<body>
+    <nav>
+        <a href=""><img src="image1.jpg" alt="image1" height="50px" width="50px"></a>
+        <a href="">home</a>
+        <a href="">About</a>
+        <a href="">Services</a>
+        <a href="">contact</a>
+    </nav>
+
+        
+    <div class="container1" style="background-color: grey">
+    <div class="box1" style="background-color: aqua;">box1</div>
+    <div class="box1" style="background-color: red;">box2</div>
+    <div class="box1" style="background-color: blue;">box3</div>
+    <div class="box1" style="background-color: green;">box4</div>
+    </div>
+    <br>
+    <br>
+    <div class="container1" style="background-color: grey">
+    <div class="box1" style="background-color: aqua;">box1</div>
+    <div class="box1" style="background-color: red;">box2</div>
+    <div class="box1" style="background-color: blue;">box3</div>
+    <div class="box1" style="background-color: green;">box4</div>
+    </div>
+</body>
+</html>
