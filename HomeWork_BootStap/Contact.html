@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <title>Title</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <!-- Bootstrap CSS v5.3.8 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+            crossorigin="anonymous"
+        />
+    </head>
+
+    <body>
+         <header>
+            <!-- place navbar here -->
+             <nav
+                class="navbar navbar-expand-sm navbar-light bg-light"
+             >
+                <div class="container">
+                    <a class="navbar-brand" href="home.html"><img
+                        src="data:image/jpeg;base64,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"
+                        class="img-fluid rounded-top"
+                        alt=""
+                        height="50px"
+                        width="50px"
+                    />  
+                    </a>
+                    <button
+                        class="navbar-toggler d-lg-none"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapsibleNavId"
+                        aria-controls="collapsibleNavId"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="collapsibleNavId">
+                        <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="home.html" aria-current="page"
+                                    >Home
+                                    <span class="visually-hidden">(current)</span></a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="Product.html" aria-current="page"
+                                    >Product
+                                    <span class="visually-hidden">(current)</span></a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="Soon.html" aria-current="page"
+                                    >Soon
+                                    <span class="visually-hidden">(current)</span></a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="Contact.html" aria-current="page"
+                                    >Contact
+                                    <span class="visually-hidden">(current)</span></a
+                                >
+                            </li>
+                             <li class="nav-item">
+                                <a class="nav-link active" href="About.html" aria-current="page"
+                                    >About
+                                    <span class="visually-hidden">(current)</span></a
+                                >
+                            </li>
+                        </ul>
+                        <form class="d-flex my-2 my-lg-0">
+                            
+                            <a
+                                name=""
+                                id=""
+                                class="btn btn-primary"
+                                href="Register.html"
+                                role="button"
+                                >Register</a
+                            >
+                            
+                        </form>
+                    </div>
+                </div>
+             </nav>
+             
+        </header>
+        <main>
+            <h2 class="text-center my-3">Company details</h2>
+            <div
+                class="container col-4 text-center shadow border bg-secondary " 
+            >
+                <div
+                    class="table-responsive my-4"
+                >
+                    <table
+                        class="table table-primary"
+                    >
+                        <thead>
+                            <tr>
+                                <th scope="col">Name</th>
+                                <th scope="col">Shoeb</th>
+                               
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class=" table-warning">
+                                <td scope="row">Phone</td>
+                                <td>900245</td>
+                                
+                            </tr>
+                            <tr class="table-danger">
+                                <td scope="row">Address</td>
+                                <td>Naigaon</td>
+                                
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+            </div>
+            <h3 class="text-center my-3 border ">Query Form</h3>
+            <div
+                class="container text-center my-4 col-3"
+            >
+                <div class="form-floating mb-3">
+                    <input
+                        type="text"
+                        class="form-control"
+                        name="formId1"
+                        id="formId1"
+                        placeholder=""
+                    />
+                    <label for="formId1">Name</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input
+                        type="email"
+                        class="form-control"
+                        name="formId1"
+                        id="formId1"
+                        placeholder=""
+                    />
+                    <label for="formId1">Email</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input
+                        type="Query"
+                        class="form-control"
+                        name="formId1"
+                        id="formId1"
+                        placeholder=""
+                    />
+                    <label for="formId1">Query</label>
+                </div>
+                
+                <button
+                    type="button"
+                    class="btn btn-primary "
+                >
+                    Button
+                </button>
+                
+            </div>
+            <h3 class="text-center">Come Find Us</h3>
+            <div
+                class="container text-center"
+            >
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d120566.82477271046!2d72.86520209932911!3d19.207721784590436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1791442236618!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+
+            </div>
+               <div
+                class="container d-flex justify-content-center"
+            >
+                
+            <nav aria-label="Page navigation">
+                <ul
+                    class="pagination    "
+                >
+                    <li class="page-item disabled">
+                        <a class="page-link" href="home.html" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                    <li class="page-item active" aria-current="page">
+                        <a class="page-link" href="Product.html">1</a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="Soon.html">3</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="Contact.html" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="About.html" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            </div>
+        </main>
+        <footer>
+            <div
+                class="container-fluid bg-primary text-center py-2"
+            >
+                <h3>&copy; All rights reserved by sdac</h3>
+            </div>
+            
+        </footer>
+        <!-- Bootstrap JavaScript Bundle (includes Popper) -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>
